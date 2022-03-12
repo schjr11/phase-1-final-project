@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Plant Finder</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="plant-header">
+      <img
+        src="https://thereadingresidence.com/wp-content/uploads/2015/06/plants.jpg"
+        alt="plant-header"
+      />
+    </div>
+
+    <div class="container">
+      <form class="add-plant-form">
+        <h3>Create a plant!</h3>
+
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Enter a plant's name..."
+          class="input-text"
+        />
+        <br />
+        <input
+          type="text"
+          name="image"
+          value=""
+          placeholder="Enter a plant's image URL..."
+          class="input-text"
+        />
+        <br />
+        <input
+          type="submit"
+          name="submit"
+          value="Create Plant"
+          class="submit"
+        />
+      </form>
+    </div>
+    <p style="text-align:center">
+      Time to update your garden! <button id="new-plant-btn">Add a new plant!</button>
+    </p>
+
+    <div id="plant-collection"></div>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>
