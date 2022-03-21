@@ -20,5 +20,18 @@ function getPlants() {
   .then(function(response) {
     return response.json();
   })
-  .then(function(data))
+  .then(function(data) {
+    console.log(data)
+  })
+}
+
+function renderPlant() {
+  
+  const plantCard = `<div class="card">
+  <h2>${plants.name}</h2>
+  <img src=${plants.image} class="plant-avatar" />
+  <p>${plants.likes}Likes </p>
+  <button class="like-btn"> Like <3</button>
+</div>`
+
 }
