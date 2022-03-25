@@ -12,7 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
       plantForm.style.display = 'none'
     }
   })
-
+plantForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+})
 })
 
 function getPlants() {
