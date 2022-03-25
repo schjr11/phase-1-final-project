@@ -50,7 +50,6 @@ function postPlant(name, url) {
     body: JSON.stringify({
       "name": name,
       "image": url,
-      "likes": 1
     })
   })
   .then(function(response) {
@@ -60,3 +59,44 @@ function postPlant(name, url) {
     renderPlant(data)
   })
 }
+
+// function patchPlant(newNumberOfLikes) {
+//   fetch ('http://localhost:3000/plants/:id', {
+//     method: 'PATCH',
+//     headers: {
+//       "Content-Type": "application/json",
+//       Accept: "application/json"
+//     },
+//     body: JSON.stringify({
+//       "likes": newNumberOfLikes,
+//     })
+//   })
+//   .then(function(response) {
+//     return response.json();
+//   })
+//   .then(function(data) {
+//     renderPlant(data)
+//   })
+// }
+
+// function deletePlant(name, url) {
+//   fetch ('http://localhost:3000/plants/', {
+//     method: 'DELETE',
+//     headers: {
+//       "Content-Type": "application/json",
+//       Accept: "application/json"
+//     },
+//     body: JSON.stringify({
+//       "name": name,
+//       "image": url,
+//     })
+//   })
+//   .then(function(response) {
+//     return response.json();
+//   })
+//   .then(function(data) {
+//     renderPlant(data)
+//   })
+// }
+
+// How to make a delete button??????????
