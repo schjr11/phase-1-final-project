@@ -12,9 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
       plantForm.style.display = 'none'
     }
   })
-plantForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-})
+  plantForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    postPlant(e.target.name.value, e.target.image.value)
+  })
 })
 
 function getPlants() {

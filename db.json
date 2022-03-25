@@ -77,6 +77,12 @@
       "name": "Yaupon Holly",
       "image": "https://nativebackyards.com/wp-content/uploads/2021/01/texas-yaupon-holly-768x1024.jpg",
       "likes": 1
+    },
+    {
+      "name": "Mexican Bush Sage",
+      "image": "https://www.calloways.com/wp-content/uploads/G167-06.jpg",
+      "likes": 1,
+      "id": 14
     }
   ]
 }
