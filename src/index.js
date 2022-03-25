@@ -53,4 +53,10 @@ function postPlant(name, url) {
       "likes": 1
     })
   })
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    renderPlant(data)
+  })
 }
