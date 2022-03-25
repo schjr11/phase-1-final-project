@@ -39,3 +39,17 @@ function renderPlant(p) {
   plantGarden.innerHTML += plantCard 
 }
 
+function postPlant(name, url) {
+  fetch ('http://localhost:3000/plants', {
+    method: 'POST',
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: JSON.stringify({
+      "name": name,
+      "image": url,
+      "likes": 1
+    })
+  })
+}
