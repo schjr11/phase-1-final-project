@@ -16,22 +16,24 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function getPlants() {
-  fetch ('http://localhost:3000/plants')
+  fetch ('http://localhost:3000/plants/')
   .then(function(response) {
     return response.json();
   })
   .then(function(data) {
-    console.log(data)
+    data.map((p) => renderPlant(p))
   })
 }
 
-function renderPlant() {
-  
-  const plantCard = `<div class="card">
-  <h2>${plants.name}</h2>
-  <img src=${plants.image} class="plant-avatar" />
-  <p>${plants.likes}Likes </p>
-  <button class="like-btn"> Like <3</button>
-</div>`
+function renderPlant(p) {
+  const plantCard =`<div class="card">
+    <h2>${p.name}</h2>
+    <img src=${p.image} class="plant-avatar" />
+    <p>${p.likes} Likes </p>
+    <button class="like-btn"> Like </button>
+  </div>`
 
+  const plantGarden = document.getElementById('plant-collection')
+  plantGarden.innerHTML += plantCard 
 }
+
