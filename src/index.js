@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     postPlant(e.target.name.value, e.target.image.value)
   })
+  // const deleteBtn = document.querySelector("#delete-btn")
+  // deleteBtn.addEventListener('click', () =>{
+  //   console.log("test")
+  // })
 })
 
 function getPlants() {
@@ -24,8 +28,12 @@ function getPlants() {
     return response.json();
   })
   .then(function(data) {
-    data.map((p) => renderPlant(p))
+    data.map((p) => {
+      renderPlant(p)
+      test()
+    })
   })
+
 }
 
 function renderPlant(p) {
@@ -35,11 +43,21 @@ function renderPlant(p) {
     <p>${p.likes} Likes </p>
     <button class="like-btn"> Like </button>
     <button class="delete-btn"> Delete </button>
+
   </div>`
 
   const plantGarden = document.getElementById('plant-collection')
-  plantGarden.innerHTML += plantCard 
+  plantGarden.innerHTML += plantCard;
 }
+
+function test(){
+  const deleteBtns = document.querySelectorAll(".delete-btn");
+  for(let i = 0; i < deleteBtns.length; i++){
+    deleteBtns[i].addEventListener('click', () => {console.log("test")})
+  }
+ 
+}
+
 
 function postPlant(name, url) {
   fetch ('http://localhost:3000/plants', {
