@@ -34,6 +34,7 @@ function renderPlant(p) {
     <img src=${p.image} class="plant-avatar" />
     <p>${p.likes} Likes </p>
     <button class="like-btn"> Like </button>
+    <button class="delete-btn"> Delete </button>
   </div>`
 
   const plantGarden = document.getElementById('plant-collection')
@@ -50,6 +51,7 @@ function postPlant(name, url) {
     body: JSON.stringify({
       "name": name,
       "image": url,
+      "likes": 1
     })
   })
   .then(function(response) {
@@ -59,6 +61,8 @@ function postPlant(name, url) {
     renderPlant(data)
   })
 }
+
+
 
 // function patchPlant(newNumberOfLikes) {
 //   fetch ('http://localhost:3000/plants/:id', {
