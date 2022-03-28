@@ -4,13 +4,13 @@
       "id": 1,
       "name": "Turk's Cap",
       "image": "https://nativebackyards.com/wp-content/uploads/2020/12/red-turks-cap-flowers-1024x683.jpg",
-      "likes": 1
+      "likes": 9
     },
     {
       "id": 2,
       "name": "American Beautyberry",
       "image": "https://nativebackyards.com/wp-content/uploads/2021/01/american-beautyberry-texas-native-768x1024.jpg",
-      "likes": 1
+      "likes": 11
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "id": 4,
       "name": "Esperanza",
       "image": "https://nativebackyards.com/wp-content/uploads/2021/01/esperanza-central-texas-native-768x1024.jpg",
-      "likes": 1
+      "likes": 8
     },
     {
       "id": 5,
@@ -64,19 +64,19 @@
       "id": 11,
       "name": "Fall Aster",
       "image": "https://nativebackyards.com/wp-content/uploads/2021/01/fall-aster-texas-native-plants-768x1024.jpg",
-      "likes": 1
+      "likes": 13
     },
     {
-      "id": 12,
-      "name": "Inland Sea Oats",
-      "image": "https://nativebackyards.com/wp-content/uploads/2021/01/inland-sea-oats.jpg",
-      "likes": 1
+      "name": "Mexican Bush Sage",
+      "image": "https://www.calloways.com/wp-content/uploads/G167-06.jpg",
+      "likes": 1,
+      "id": 12
     },
     {
-      "id": 13,
-      "name": "Yaupon Holly",
-      "image": "https://nativebackyards.com/wp-content/uploads/2021/01/texas-yaupon-holly-768x1024.jpg",
-      "likes": 1
+      "name": "Mexican Bush Sage",
+      "image": "https://www.calloways.com/wp-content/uploads/G167-06.jpg",
+      "likes": 1,
+      "id": 13
     },
     {
       "name": "Mexican Bush Sage",
@@ -89,6 +89,12 @@
       "image": "https://www.calloways.com/wp-content/uploads/G167-06.jpg",
       "likes": 1,
       "id": 15
+    },
+    {
+      "name": "Mexican Bush Sage",
+      "image": "https://www.calloways.com/wp-content/uploads/G167-06.jpg",
+      "likes": 1,
+      "id": 16
     }
   ]
 }
