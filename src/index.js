@@ -69,7 +69,7 @@ function renderPlant(plants) {
     <button class="like-btn"> Like </button>
     <button class="delete-btn"> Delete </button>`
 
-// Create a click event to "like" a plant
+// Create a click event to "like" a plant and to delete a plant by removing it
   plantCard.addEventListener("click", (event) =>{
       if (event.target.matches("button.like-btn")){
         p.likes++
