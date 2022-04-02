@@ -13,3 +13,5 @@ Next, I created a click event for both the like button and the delete button. Li
 Finally, a PATCH request and a DELETE request are necessary for the like and delete buttons to work.
 
 In the end, you get a fully functional plant finder that allows you to store, list, post, like, and delete plants that you need for your lawn or garden. It's the perfect tool to use for homeowners, landscapers, and gardeners alike!
+
+**All images listed come from nativebackyards.com
