@@ -1,10 +1,8 @@
-// Don't show container right away
 let showForm = false
 
-// Get plants when the page loads immediately
 document.addEventListener("DOMContentLoaded", () => {
   getPlants();
-// Click "Add a new plant!" to open the container and to close it again
+
   const addBtn = document.querySelector("#new-plant-btn")
   const plantForm = document.querySelector('.container')
   addBtn.addEventListener('click', () =>{
@@ -17,14 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-// Post a plant by submitting on the form
   plantForm.addEventListener('submit', (e) => {
     e.preventDefault();
     postPlant(e.target.name.value, e.target.image.value)
   })
 })
 
-// Post a new plant into the db.json and return a response
 function postPlant(name, url) {
   fetch ('http://localhost:3000/plants', {
     method: 'POST',
@@ -46,7 +42,6 @@ function postPlant(name, url) {
   })
 }
 
-// Render the plants that you get
 function getPlants() {
   fetch ('http://localhost:3000/plants/')
   .then(function(response) {
@@ -57,7 +52,6 @@ function getPlants() {
 }
 
 function renderPlant(plants) {
-// Create a card for each plant
   plants.forEach(p => {
     const plantCard = document.createElement("div")
     plantCard.className = "card"
@@ -69,7 +63,6 @@ function renderPlant(plants) {
     <button class="like-btn"> Like </button>
     <button class="delete-btn"> Delete </button>`
 
-// Create a click event to "like" a plant and to delete a plant by removing it
   plantCard.addEventListener("click", (event) =>{
       if (event.target.matches("button.like-btn")){
         p.likes++
@@ -87,7 +80,6 @@ function renderPlant(plants) {
   })
 }
 
-// Create a patch request for "liking" a plant on a plant card
 function increaseLikes(p){
   fetch(`http://localhost:3000/plants/${p.id}`,{
     method: "PATCH",
@@ -101,7 +93,6 @@ function increaseLikes(p){
   });
 }
 
-//Create a delete request to get rid of a plant card
 function deletePlant(p){
   fetch(`http://localhost:3000/plants/${p.id}`,{
     method: "DELETE",
