@@ -1,7 +1,13 @@
-# phase-1-final-project
+# Plant Finder
+My phase 1 project is titled Plant Finder.
 
+## Description
 For my phase 1 project, I have created a plant finder with the purpose of posting plants, liking plants, and deleting plants. The purpose of this is to keep track of plants that a consumer may want to assist them with their lawns and gardens.
 
+## Installation
+To view the db.json, under the phase-1-final-project, I entered $json-server --watch db.json in my terminal. My browser displays this at http://localhost:3000/plants.
+
+## Usage
 The app starts with the container up top. The default, when loading the page, hides the container until you click on the button that reads, "Add a new plant!" Each time you click on this button, the container will hide and then reappear.
 
 When the page loads, you get all of the saved plants automatically listed. You can add as many plants as you like in the container above by inputting the name of the plant and the URL image link and submitting.
@@ -12,6 +18,8 @@ Next, I created a click event for both the like button and the delete button. Li
 
 Finally, a PATCH request and a DELETE request are necessary for the like and delete buttons to work.
 
-In the end, you get a fully functional plant finder that allows you to store, list, post, like, and delete plants that you need for your lawn or garden. It's the perfect tool to use for homeowners, landscapers, and gardeners alike!
+## Project status
+The project is completed. In the end, you get a fully functional plant finder that allows you to store, list, post, like, and delete plants that you need for your lawn or garden. It's the perfect tool to use for homeowners, landscapers, and gardeners alike!
 
-**All images listed come from nativebackyards.com
+## Acknowledgements
+All images for the plant finder come from nativebackyards.com.
